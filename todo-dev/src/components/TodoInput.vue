@@ -21,8 +21,8 @@ export default {
         //input 시작, 끝 공백 제거: trim()함수 사용
         var value = this.newTodoItem && this.newTodoItem.trim();
 
-        //로컬 스토리지에 저장
-        localStorage.setItem(value, value);
+        //부모 컴포넌트로 이벤트 전달
+        this.$emit('addTodo', value);
 
         //초기화
         this.clearInputbox();

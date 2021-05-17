@@ -5,7 +5,8 @@
 export default {
   methods: {
     clearTodo() {
-      localStorage.clear();
+      //부모 컴포넌트에 이벤트 전달
+      this.$emit('removeAll');
     },
   },
 };

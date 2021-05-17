@@ -20,7 +20,7 @@ module.exports = {
         {
           singleQuote: true,
           semi: true,
-          useTabs: false,
+          // useTabs: true,
           tabWidth: 2,
           trailingComma: 'all',
           printWidth: 80,
